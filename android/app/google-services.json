@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "532122836555",
+    "project_id": "getxcode-bcac2",
+    "storage_bucket": "getxcode-bcac2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532122836555:android:fed7fc86749069cba777ce",
+        "android_client_info": {
+          "package_name": "com.example.getxcode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532122836555-a787388rtk2hn8tfs27hm4bbrkhtud6t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.getxcode",
+            "certificate_hash": "30808ec7d251396ec8fc82041e94790b38b9cafc"
+          }
+        },
+        {
+          "client_id": "532122836555-vo5r0mgbucnj6avo1g3recof0ejfvu8b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6M91HWektIl1yb7yBuK4YWknpgrmvnUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532122836555-vo5r0mgbucnj6avo1g3recof0ejfvu8b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

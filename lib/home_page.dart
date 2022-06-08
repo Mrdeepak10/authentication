@@ -1,9 +1,7 @@
-
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:getxcode/services/login_screen.dart';
 import 'package:getxcode/services/services.dart';
 
 class HomePage extends StatefulWidget {
@@ -27,13 +25,22 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            Get.offAll(Page1());
+          },
+          icon: const Icon(Icons.arrow_back),
+        ),
+      ),
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: 20,),
+                const SizedBox(
+                  height: 20,
+                ),
                 Text('hello'.tr),
                 ElevatedButton(
                     onPressed: () {
@@ -51,19 +58,18 @@ class _HomePageState extends State<HomePage> {
                       name = box.read('darkmode');
                       setState(() {});
                     },
-                    child: Text("Change text")),
+                    child: const Text("Change text")),
                 ElevatedButton(
                   onPressed: () {
                     Get.snackbar("dream", "dream comes true when you work hard");
                   },
-                  child: Text("Showsnackbar"),
+                  child: const Text("Showsnackbar"),
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Get.defaultDialog(
-                        title: "dream comes true when you work hard");
+                    Get.defaultDialog(title: "dream comes true when you work hard");
                   },
-                  child: Text("Diologbox"),
+                  child: const Text("Diologbox"),
                 )
               ],
             ),
